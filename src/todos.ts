@@ -60,7 +60,7 @@ todos.post('/', async c => {
 })
 
 // Update a todo
-todos.put('/:id', async c => {
+todos.patch('/:id', async c => {
   try {
     const id = parseInt(c.req.param('id'))
     const body = await c.req.json()
